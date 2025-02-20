@@ -1,9 +1,12 @@
+
+/*stilar för hela sidan*/
 *{
     box-sizing: border-box;
 }
-
+/*Stilar först för skärmen under 414px */
+/*stilar för bodyn*/
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: Robo;
     font-size: 1rem;
     display: flex;
     justify-content: center;
@@ -39,8 +42,6 @@ html{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
-
 }
 
 input {
@@ -95,8 +96,7 @@ td {
     border: 1px solid darkgrey;
 }
 
-
-
+/*Stilar för skärmer mellan 414px och 1181px */
 @media (max-width: 1181px) and (min-width: 414px){
 	aside{
         display: block;
@@ -122,6 +122,7 @@ td {
     }
 
 }
+/*stilar för skärmstorlekar större 1181 */
 @media (min-width: 1181px){
     aside{
         display: block;
