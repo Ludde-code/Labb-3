@@ -6,12 +6,10 @@
 /*Stilar först för skärmen under 414px */
 /*stilar för bodyn*/
 body{
-    font-family: Robo;
+    font-family: 'Roboto';
     font-size: 1rem;
     display: flex;
     justify-content: center;
-
-    
 }
 
 html{
@@ -30,6 +28,7 @@ html{
     text-align: center;
 }
 
+/*stilar formuläret */
 #div-in-form{
     background: white;
     padding: 30px;
@@ -37,8 +36,6 @@ html{
     border-radius: 8px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
     margin: 0 0 2rem 0;
-
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -57,7 +54,7 @@ input:focus {
     border: 1px solid #007bff; /* Blå kant */
 }
 .col{
-    margin: 0 0 1rem 0;
+    margin: 0 0 1rem 0; /*Sätter margin till 0 på alla sidor utom botten*/
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -66,7 +63,7 @@ input:focus {
 
 #div-with-a{
     display: flex;
-    justify-content: right;
+    justify-content: right; /*sätter startknappen till höger*/
     width: 100%;
 }
 #newGame {
@@ -79,13 +76,13 @@ input:focus {
     font-weight: bold;
   }
 
-
+/*Gömmer asiden på skärmar under 414px */
 aside{
     display: none;
 }
 
 table{
-    border-spacing: 0;
+    border-spacing: 0; /*tar bort mellanrummet mellan ruterna*/
     width: 100%;
     margin: 0 auto;
 }
@@ -98,14 +95,17 @@ td {
 
 /*Stilar för skärmer mellan 414px och 1181px */
 @media (max-width: 1181px) and (min-width: 414px){
+
+    /*visar asiden och lägger den på sidan*/
 	aside{
         display: block;
         width: 30%;
     }
-    img{
+    aside img{
         width: 100%;
     }
 
+    /*gör main mindre och sätter bredden och höjden på td till 125px*/
     main{
         width: 50%;
     }
@@ -139,8 +139,9 @@ td {
         width: 200px;
         height: 200px;
     }
+    
     .col{
-        width: 49%;
+        width: 49%;/*sätter bredden på col till 49% för att ha plats med player 1 och player 2*/
     }
     html{
         font-size: 22px;
@@ -152,7 +153,7 @@ td {
         
     }
     #div-with-a{
-        justify-content: left;
+        justify-content: left; /*lägger startknappen till vänster*/
     }
     table{
         width: 70%;
