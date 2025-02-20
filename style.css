@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+html{
+    font-size: 16px;
+}
+
+.jumbotron{
+    background-color: #DEDEDE;
+    padding: 1.5rem;
+    border-radius: 0.3rem;
+    margin: 0 0 1rem 0;
+
+}
+
+.text-center{
+    text-align: center;
+}
+
+#div-in-form{
+    background: white;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 0 2rem 0;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+}
+
+input {
+    width: 100%;
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+input:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.8); /* Blå skugga */
+    border: 1px solid #007bff; /* Blå kant */
+}
+.col{
+    margin: 0 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+#div-with-a{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+#newGame {
+    color: white;
+    background-color: #4389d3;
+    padding: 10px 20px;
+    display:inline-block;
+    border-radius: 5px;
+    text-decoration: none; 
+    font-weight: bold;
+  }
+
+
+aside{
+    display: none;
+}
+
+table{
+    border-spacing: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+td {
+    width: 125px;
+    height: 125px;
+    font-size: 50px;
+    border: 1px solid darkgrey;
+}
+
+
+
+@media (max-width: 1181px) and (min-width: 414px){
+	aside{
+        display: block;
+        width: 30%;
+    }
+    img{
+        width: 100%;
+    }
+
+    main{
+        width: 50%;
+    }
+    td{
+        width: 125px;
+        height: 125px;
+    }
+    html{
+        font-size: 18px;
+    }
+    table{
+        width: 70%;
+        height: auto;
+    }
+
+}
+@media (min-width: 1181px){
+    aside{
+        display: block;
+        width: 300px;
+    }
+    aside img{
+        width: 100%;
+    }
+
+    main{
+        width: 70%;
+    }
+    td{
+        width: 200px;
+        height: 200px;
+    }
+    .col{
+        width: 49%;
+    }
+    html{
+        font-size: 22px;
+    }
+    #newGame:hover {
+        background-color: white; 
+        color: #4389d3;
+        transition: 0.3s;
+        
+    }
+    #div-with-a{
+        justify-content: left;
+    }
+    table{
+        width: 70%;
+        height: auto;
+    }
+
+}
