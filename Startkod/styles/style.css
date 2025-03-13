@@ -90,18 +90,20 @@ aside{
 
 table{
     border-spacing: 0; /*tar bort mellanrummet mellan ruterna*/
-    width: 100%;
     margin: 0 auto;
+    
 }
 td {
     width: 125px;
     height: 125px;
     font-size: 50px;
     border: 1px solid darkgrey;
+    text-align: center;
+
 }
 
 /*Stilar för skärmer mellan 414px och 1181px */
-@media (max-width: 1181px) and (min-width: 414px){
+@media (max-width: 1181px) and (min-width: 415px){
 
     /*visar asiden och lägger den på sidan*/
 	aside{
@@ -123,10 +125,7 @@ td {
     html{
         font-size: 18px;
     }
-    table{
-        width: 70%;
-        height: auto;
-    }
+
 
 }
 /*stilar för skärmstorlekar större 1181 */
@@ -157,14 +156,11 @@ td {
         background-color: white; 
         color: #4389d3;
         transition: 0.3s;
+        border: 1px solid #4389d3;
         
     }
     #div-with-a{
         justify-content: left; /*lägger startknappen till vänster*/
-    }
-    table{
-        width: 70%;
-        height: auto;
     }
 
 }
